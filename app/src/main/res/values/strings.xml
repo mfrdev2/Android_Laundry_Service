@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Laundry Service</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="otp_info">We will send you an One Time Password on this \nmobile phone</string>
+    <string name="mapKey" templateMergeStrategy="preserve" translatable="false">AIzaSyA5Ki-arfn8UqfrNVhoEWzZFTs82jpIigA</string>
+
+    <string-array name="select_items">
+        <item>Shirt</item>
+        <item>Pant</item>
+        <item>Skirts</item>
+        <item>Shorts</item>
+        <item>Socks</item>
+        <item>Sweater</item>
+        <item>Corsets</item>
+        <item>Jackets</item>
+        <item>Jeans</item>
+    </string-array>
+</resources>

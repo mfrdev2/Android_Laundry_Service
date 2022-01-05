@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/active_order_nav"
+    app:startDestination="@id/activeOrderFragment">
+
+    <fragment
+        android:id="@+id/activeOrderFragment"
+        android:name="com.frabbi.londriservice.view.fragments.ActiveOrderFragment"
+        android:label="fragment_active_order"
+        tools:layout="@layout/fragment_active_order" >
+        <action
+            android:id="@+id/action_activeOrderFragment_to_orderDetailsFragment"
+            app:destination="@id/orderDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderDetailsFragment"
+        android:name="com.frabbi.londriservice.view.fragments.OrderDetailsFragment"
+        android:label="OrderDetailsFragment" >
+        <action
+            android:id="@+id/action_orderDetailsFragment_to_activeOrderFragment"
+            app:destination="@id/activeOrderFragment" />
+        <action
+            android:id="@+id/action_orderDetailsFragment_to_orderTrackerFragment"
+            app:destination="@id/orderTrackerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderTrackerFragment"
+        android:name="com.frabbi.londriservice.view.fragments.OrderTrackerFragment"
+        android:label="OrderTrackerFragment" />
+</navigation>

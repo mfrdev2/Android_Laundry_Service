@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background_gradient"
+        android:layout_height="match_parent"
+        tools:context=".view.fragments.HomeFragment">
+
+
+        <com.github.islamkhsh.CardSliderViewPager
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:id="@+id/viewPager"
+            android:layout_marginTop="2dp"
+            app:cardSlider_smallScaleFactor="0.9"
+            app:cardSlider_otherPagesWidth="24dp"
+            app:cardSlider_pageMargin="12dp"
+            app:auto_slide_time="3"
+            app:cardSlider_indicator="@id/slideIndicator"/>
+        <com.github.islamkhsh.CardSliderIndicator
+            android:id="@+id/slideIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:indicatorsToShow="3"
+            />
+
+    </LinearLayout>
+</layout>
